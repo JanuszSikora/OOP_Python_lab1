@@ -1,4 +1,3 @@
-
 class Statystyka:
     
     def __init__(self,lista,dlugosc):
@@ -25,6 +24,8 @@ niż "koniec"''')
         return self.sumaa
 
     def srednia(self):
+        print('''Do wyliczenia średniej trzeba wprowadzić indeksy
+jeszcze raz, ponieważ ta metoda korzysta z metody "suma"''')
         self.sredniaa=self.suma()/(self.koniec-self.start+1)
         return self.sredniaa
 
@@ -59,13 +60,14 @@ dlugosc=len(ciag)
 lista1=Statystyka(ciag,dlugosc)
 
 print('Dla listy',lista1.lista)
-print('ub po posortowaniu',lista1.sortuj())
+print('lub po posortowaniu',lista1.sortuj())
 
 print('suma podanego wycinka listy wynosi',lista1.suma())#wywołanie metody sumującej z klasy
 print('średnia arytmetyczna podanego wycinka listy wynosi',lista1.srednia())#wywołanie metody średniej arytmetycznej z klasy
 print('mediana całej listy wynosi',lista1.mediana())#wywołanie metody mediany z klasy
 print('najmniejsza wartość całej listy to',lista1.minimum())#wywołanie metody wartości minimalnej z klasy
 print('największa wartość całej listy to',lista1.maximum())#wywołanie metody wartości maksymalnej z klasy
+
 
 
 
