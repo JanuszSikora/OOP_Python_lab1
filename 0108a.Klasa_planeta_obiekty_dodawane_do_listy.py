@@ -41,17 +41,11 @@ lista_planet.append(Planety('Pluton',39.48,None))
  #   pickle.dump(lista_planet[i],plik_planety)
 #plik_planety.close()
 
-#odczyt obiektów z pliku
-#plik_planety=open('Planet_plik.dat','rb')
-#for i in range(len(lista_planet)):
- #   lista_planet[i]=pickle.load(plik_planety)
-  #  print(lista_planet[i])
-
-
 #wyświetlenie obiektu - tylko komentarz po zamarynowaniu obiektów w 'Planet_plik.dat'
 for i in range(len(lista_planet)):
     lista_planet[i].pokaz(True)#wybór parametru generuje podlisty
 #wg wartości self.rzeczywista lub całość listy dla wartości 'None'
 
 sleep(2)
+
 
