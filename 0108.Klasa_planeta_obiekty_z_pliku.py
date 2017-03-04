@@ -26,30 +26,6 @@ class Planety:
                 
     
 #main
-#Konkretyzacja obiektów - tylko komentarz po zamarynowaniu obiektów w 'Planet_plik.dat'
-#lista_planet=[]
-#lista_planet.append(Planety('Wulkan',.03,False))
-#lista_planet.append(Planety('Merkury',.038,True))
-#lista_planet.append(Planety('Wenus',.72,True))
-#lista_planet.append(Planety('Ziemia',1,True))
-#lista_planet.append(Planety('Mars',1.52,True))
-#lista_planet.append(Planety('Faeton',1.7,False))
-#lista_planet.append(Planety('Jowisz',5.2,True))
-#lista_planet.append(Planety('Saturn',9.53,True))
-#lista_planet.append(Planety('Uran',19.19,True))
-#lista_planet.append(Planety('Neptun',30.06,True))
-#lista_planet.append(Planety('Pluton',39.48,'False/True'))
-
-
-#zapis obiektów do pliku - operacja jednorazowa, potem "za-#-owane"
-#plik_planety=open('Planet_plik.dat','wb')
-#for i in range(Planety.total()):
- #   pickle.dump(lista_planet[i],plik_planety)
-#plik_planety.close()
-
-#dlugosc_listy_planet=open('Planet_plik_dlug.dat','wb')
-#pickle.dump(Planety.total(),dlugosc_listy_planet)
-#dlugosc_listy_planet.close()
 
 #odczyt obiektów z pliku
 dlugosc_listy_planet=open('Planet_plik_dlug.dat','rb')
@@ -67,4 +43,5 @@ for i in range(len(lista_planet)):
 #wg wartości self.rzeczywista lub całość listy dla wartości 'None'
 
 sleep(2)
+
 
