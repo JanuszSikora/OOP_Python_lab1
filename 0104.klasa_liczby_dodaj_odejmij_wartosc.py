@@ -21,7 +21,7 @@ te działania, a za pomocą "wyświetl" zobaczyć ich wynik''')
         return pisanie
 
 #main
-zlicz=Zliczanie(5,2)
+zlicz=Zliczanie(5,2)#tworzenie obiektu
 zlicz.dodaj()#wywołanie metody dodającej
 zlicz.odejmij()#wywołanie metody odejmującej
 zlicz.wypisz()#wypisuje wartość ostatniego wywołanego działania dla obiektu
